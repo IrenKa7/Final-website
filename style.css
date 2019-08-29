@@ -1,0 +1,464 @@
+@import url(reset.css);
+@import url(footer.css);
+@import url(section.css);
+@font-face {
+    font-family: "League Gothic";
+    src: url(font/League-Gothic/LeagueGothic-Regular.otf);
+}
+@font-face {
+    font-family: 'Open Sans-Light';
+    src: url(font/Open_Sans/OpenSans-Light.ttf);
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url(font/Open_Sans/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: 'Open Sans-ExtraBold';
+    src: url(font/Open_Sans/OpenSans-ExtraBold.ttf);
+}
+.container {
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+}
+header {
+    height: 848px;
+    background-image: url(image/bg.png);
+    background-position: bottom center;
+    position: relative;
+}
+.header {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.logo {
+    width: 155px;
+}
+.menu {
+    width: 631px;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+    font-family: "League Gothic";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33.72px;
+    text-transform: uppercase;
+}
+.first_li, .another_li {
+    display: inline-block;
+    padding: 26px 19px 0px;    
+}
+.first_li, .another_li a {
+    text-decoration-line: none;
+    list-style-type: none;
+    color: #ffffff;
+}
+.menu li a:hover{
+    border-bottom: 3px solid #edbfff;
+}
+.header_content {
+    height: 400px;
+    width: 100%;
+    background-color: rgba(6, 6, 6, 0.29);
+    position: absolute;
+    top: 172px;
+    left: 0px;
+    
+}
+.content {
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+.text {
+    width: 502px;
+    height: 235px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: -20px;
+}
+.text p:first-child{
+    color: #fefefe;
+    font-family: "League Gothic";
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 36px;
+    margin-bottom: -20px;
+
+}
+.text p:nth-child(2) {
+    color: #edbfff;
+    font-family: "League Gothic";
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 36px;
+}
+.text p:last-child{
+    color: #ffffff;
+    font-family: 'Open Sans-Light';
+    font-size: 21px;
+    font-weight: 300;
+    letter-spacing: -0.45px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-top: -20px;
+}
+.mobile {
+    position: absolute;
+    left: 650px;
+    top: -20px;
+}
+.mobile img:first-child{
+    width: 130px;
+    height: 268px;
+    position: absolute;
+    top: 70px;
+    left: -80px;
+
+    
+}
+.iphone_4 {
+    width: 197px;
+    height: 434px;
+    position: absolute;
+    top: -5px;
+    left: 0px;
+
+}
+.mobile .play img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 152px;
+    left: 64px;
+}
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 960px;
+    }
+}
+@media screen and (max-width: 961px) {
+    .container {
+        width: 768px;  
+    }
+    .first_li, .another_li{
+        padding: 26px 39px 0px 0px;
+    }
+    .header_content{
+        top: 240px;
+    }
+    .text{
+        width: 450px;
+        padding-top: 45px;
+        margin-left: 10px;
+    }
+    .text p:first-child{
+        font-size: 55px;
+    }
+    .text p:nth-child(2){
+        font-size: 30px;
+    }
+    .cut{
+        display: none;
+    }
+    .logo{
+        margin-left: 5px;
+    }
+    .menu{
+        margin-left: 5px;
+    }
+    .mobile{
+        left: 500px;
+    }
+    .iphone_4{
+        width: 182px;
+        height: 406px;
+    }
+    .mobile img:first-child{
+        width: 111px;
+        height: 250px;
+        left: -70px;
+    }
+    .mobile .play img{
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        top: 152px;
+        left: 64px;
+    }
+    .nunc_1::before{
+        left: -27px
+    }
+    .about_our_company a{
+        margin-left: 133px;
+    }
+    .content{
+        width: 768px;
+    }
+    .blog{
+        margin-left: -33px;
+    }
+    .articles{
+        padding-top: 45px;
+        margin-left: -10px;
+    }
+    .about_our_company {
+        width: 208px
+        }
+    .about_our_company p:first-child{
+        font-size: 27px;
+    }
+    .nunc_1, .nunc_2, .nunc_3{
+        width: 183px;
+        margin: -24px 0px 11px 0px;
+   
+    font-size: 13px;
+    }
+    .coment{
+        width: 420px;
+        height: 279px;
+    }
+    .from_the_blog {
+        width: 360px;
+        margin-top: 80px;
+    }
+    .post p{
+        margin:14px;
+    }
+    .read_more{
+        margin-left: 260px;
+    }
+    .bottom .bottom_box_p{
+        font-size: 14px;
+    }
+    .bottom_box p{
+        font-size: 14px;
+    }
+    .bottom_box{
+        width: 221px;
+        margin: auto 17px;
+    }
+    .trust_markes{
+        width: 670px;
+        height: 50px;
+        background-size: 100% 58px;
+        
+    }
+    .menu_footer{
+        width: 610px;
+        font-size: 22px;
+        margin-right: -20px;
+    }
+    .menu_footer li{
+        padding: 40px 15px 0px;
+        
+    }
+    .designed p{
+        margin-left: -5px;
+    }
+    .designed{
+        margin-right: 36px;
+    }
+}
+@media screen and (max-width: 769px) {
+    header {
+        height: 600px;
+    }
+    .container {
+        width: 480px;
+    }
+    .logo {
+        margin: 0px auto;
+    }
+    .header_content{
+        top: 130px;
+        height: 300px;
+    }
+    .menu {
+        width: 480px;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 10%;
+    
+    }
+    .first_li, .another_li {
+        padding: 13px 0px 0px 2px;
+        margin: 0px 10px;
+        font-size: 20px;
+    /* width: 244px; */
+    /* background-image: url(image/menu.png);
+    background-size: cover; */
+    /* background-color: #36293e;
+    text-align: center; */
+    }
+    .menu div .another_li{
+        overflow: hidden;
+    }
+    .content {
+        width: 480px;
+    }
+    .mobile {
+        position: absolute;
+        left: 590px;
+        top: -20px;
+    }
+    .text {
+        width: 400px;
+    }
+    .text p:first-child {
+        font-size: 55px;
+    }
+    .text p:nth-child(2) {
+        font-size: 30px;
+    }
+    .section_top{
+        height: 450px;
+    }
+    .section_center{
+        height: 700px;
+    }
+    .about_our_company {
+        width: 230px;
+    height: 114px;
+    margin-left: 11px;
+    
+    }
+    .cut2{
+        display: none;
+    }
+
+    .text{
+        width: 300px;
+        padding-top: 45px;
+    }
+    .text p:first-child{
+        font-size: 48px;
+    }
+    .text p:nth-child(2){
+        font-size: 23px;
+    }
+    .mobile{
+        left: 350px;
+    }
+    .iphone_4{
+        width: 165px;
+        height: 347px;
+    }
+    .mobile img:first-child{
+        width: 84px;
+        height: 194px;
+        left: -47px;
+    }
+    .mobile .play img{
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 122px;
+        left: 43px;
+    }
+    .blog{
+        margin-left: 3px;
+        height: 420px;
+    }
+    .articles{
+        padding-top: 5px;
+        margin-left: 50px;
+    }
+    
+    .about_our_company p:first-child{
+        font-size: 18px;
+        line-height: 10px;
+    }
+    .nunc_1, .nunc_2, .nunc_3{
+        width: 309px;
+        font-size: 13px;
+        height: 40px;
+        margin-top: -24px
+    }
+    .about_our_company a{
+        margin-left: 174px;
+        line-height: 65px;
+    }
+    .coment{
+        width: 420px;
+        height: 240px;
+        margin-top: 40px;
+    }
+    .from_the_blog {
+        width: 334px;
+        margin-top: 0px;
+        margin-left: 50px;
+    }
+    .post span{
+        line-height: 22px;
+    }
+    .read_more{
+        line-height: 7px;
+    }
+    .trust_markes{
+        width: 450px;
+        height: 50px;
+        background-size: 100% 58px;
+        margin: 187px 10px 0px 0px;
+    }
+    .section_bottom{
+        height: 440px;
+    }
+    .post p{
+        margin:14px;
+    }
+    .read_more{
+        margin-left: 260px;
+    }
+    .bottom img{
+        width: 87px;
+        margin-top: 15px;
+    }
+    .bottom .bottom_box_p{
+        font-size: 14px;
+    }
+    .bottom_box p{
+        font-size: 14px;
+    }
+    .bottom_box{
+        width: 480px;
+        height: 130px;
+    }
+    .bottom_box .bottom_box_h{
+        font-size: 23px;
+        line-height: 14px;
+        margin-top: 1px;
+        margin-top: 10px;
+    }
+    .menu_footer{
+        width: 610px;
+        line-height: 29.72px;
+    }
+    .menu_footer li{
+        padding: 42px 13px 0px;
+    font-size: 19px;
+    }
+    .designed p{
+        margin: 5px 169px 0px;
+    }
+}
+
+
+   
+/* @media screen and (max-width: 481px) {
+    .container {
+        width: 320px;
+        
+    }
+} */
